@@ -73,7 +73,7 @@
         <field name="name">stock.card.pivot</field>
         <field name="model">stock.card</field>
         <field name="arch" type="xml">
-            <pivot string="Inventory">
+            <pivot string="Inventory">a
                 <field name="location_id" type="row"/>
                 <field name="qty" type="measure"/>
                 <field name="inventory_value" type="measure"/>
