@@ -9,7 +9,8 @@
     'depends': ['product', 'stock'],
     'data': [
         'views/stock_card_temp.xml',
-        'views/stock_card_tree.xml',
+        'views/stock_card_views.xml',
+        'security/ir.model.access.csv'
     ],
     'images': [''],
     'auto_install': False,

@@ -2,16 +2,14 @@
 <odoo>
 
     <record id="stock_card_temp" model="ir.ui.view">
-        <field name="name">stock.card.product_template</field>
-        <field name="model">stock.card</field>
+        <field name="name">product.template_procurement</field>
+        <field name="model">product.template</field>
         <field name="inherit_id" ref="stock.product_template_form_view_procurement_button"/>
         <field name="arch" type="xml">
             <xpath expr="//div[@name='button_box']" position="inside">
-                <button type="object"
+                <button type="object" string="Stock Card"
                     name="action_open_stock_card"
-                    attrs="{'invisible':[('type', '!=', 'product')]}"
-                    class="oe_stat_button" icon="fa-building-o">
-                    <field name="btn_stock_card" widget="statinfo" string="Stock Card"/>
+                    class="oe_stat_button" icon="fa-list-alt">
                 </button>
             </xpath>
         </field>
